@@ -1,5 +1,5 @@
 *.lnk
-build_*
+build*
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
