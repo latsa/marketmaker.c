@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="jpeg">
+      <UniqueIdentifier>{d0f2b2e6-330a-4ab5-b4a1-bbd7afd934b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto777">
+      <UniqueIdentifier>{2425cba5-fafc-4cbc-84dc-9d7affc83944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="marketmaker">
+      <UniqueIdentifier>{4d1450bc-c3a6-46ee-aa05-a5268134e5dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compat">
+      <UniqueIdentifier>{5b5d20f3-44e9-45e2-bad7-d31944815a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exchanges">
+      <UniqueIdentifier>{6578c2b9-e6d8-4c32-b180-0ad98d5b6aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exchanges\etomicswap">
+      <UniqueIdentifier>{1238b07b-9aa0-466b-bc05-bd92b3c95fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iguana">
+      <UniqueIdentifier>{eb32563d-e17d-4429-803b-9b40e09a53e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\marketmaker\groestl.c">
+      <Filter>marketmaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\marketmaker\keccak.c">
+      <Filter>marketmaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\marketmaker\mini-gmp.c">
+      <Filter>marketmaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\marketmaker\mm.c">
+      <Filter>marketmaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\marketmaker\segwit_addr.c">
+      <Filter>marketmaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\bitcoind_RPC.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\inet.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\OS.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\OS_nonportable.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\OS_portable.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\OS_time.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\cJSON.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\curve25519.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\curve25519-donna.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\hmac_sha512.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\ramcoder.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\SaM.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\scrypt.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\crypto777\tweetnacl.c">
+      <Filter>crypto777</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jaricom.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcapimin.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcapistd.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcarith.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jccoefct.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jccolor.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcdctmgr.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jchuff.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcinit.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcmainct.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcmarker.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcmaster.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcomapi.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcparam.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcprepct.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jcsample.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jctrans.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdapimin.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdapistd.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdarith.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdatadst.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdatasrc.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdcoefct.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdcolor.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jddctmgr.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdhuff.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdinput.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdmainct.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdmarker.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdmaster.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdmerge.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdpostct.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdsample.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jdtrans.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jerror.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jfdctflt.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jfdctfst.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jfdctint.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jidctflt.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jidctfst.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jidctint.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jmemmgr.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jquant1.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jquant2.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\jutils.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\compat\usleep.c">
+      <Filter>compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\jpeg\unix\jmemname.c">
+      <Filter>jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\exchanges\LP_etomic.c">
+      <Filter>exchanges</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\exchanges\etomicswap\etomiccurl.c">
+      <Filter>exchanges\etomicswap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\iguana\iguana_utils.c">
+      <Filter>iguana</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\exchanges\etomicswap\etomiclib.cpp">
+      <Filter>exchanges\etomicswap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\exchanges\LP_secp.c">
+      <Filter>exchanges</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\marketmaker\groestl.h">
+      <Filter>marketmaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\marketmaker\mini-gmp.h">
+      <Filter>marketmaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\marketmaker\segwit_addr.h">
+      <Filter>marketmaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\marketmaker\sph_keccak.h">
+      <Filter>marketmaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\marketmaker\sph_types.h">
+      <Filter>marketmaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\marketmaker\DEXstats.h">
+      <Filter>marketmaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\compat\OS_portable.h">
+      <Filter>compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crypto777\cJSON.h">
+      <Filter>crypto777</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crypto777\curve25519.h">
+      <Filter>crypto777</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crypto777\tweetnacl.h">
+      <Filter>crypto777</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crypto777\uthash.h">
+      <Filter>crypto777</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crypto777\utlist.h">
+      <Filter>crypto777</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\cderror.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\cdjpeg.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jconfig.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jdct.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jerror.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jinclude.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jmemsys.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jmorecfg.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jpegint.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jpeglib.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\jversion.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\jpeg\transupp.h">
+      <Filter>jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\compat\mman.h">
+      <Filter>compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\compat\pthread.h">
+      <Filter>compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\compat\sched.h">
+      <Filter>compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\compat\usleep.h">
+      <Filter>compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\exchanges\LP_etomic.h">
+      <Filter>exchanges</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\exchanges\LP_include.h">
+      <Filter>exchanges</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\exchanges\etomicswap\etomiccurl.h">
+      <Filter>exchanges\etomicswap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\exchanges\exchanges777.h">
+      <Filter>exchanges</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana_utils.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana777.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana_defines.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana_funcs.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana_globals.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana_structs.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\iguana\iguana_types.h">
+      <Filter>iguana</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\exchanges\etomicswap\etomiclib.h">
+      <Filter>exchanges\etomicswap</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

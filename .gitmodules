@@ -1,0 +1,12 @@
+[submodule "external/cpp-nanomsg-ng"]
+	path = external/cpp-nanomsg-ng
+	url = https://github.com/nanomsg/nng.git
+[submodule "external/cpp-ethereum"]
+	path = external/cpp-ethereum
+	url = https://github.com/latsa/cpp-ethereum.git
+[submodule "external/cryptopp"]
+	path = external/cryptopp
+	url = https://github.com/latsa/cryptopp.git
+[submodule "external/secp256k1"]
+	path = external/secp256k1
+	url = https://github.com/latsa/secp256k1.git

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F304B1A6-5134-4906-81C5-0EDF7A421265}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>marketmaker</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\..\..\build\VS2015\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\build\VS2015\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\..\..\build\VS2015\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\build\VS2015\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NATIVE_WINDOWS;HAVE_CONFIG_H;ETOMIC_TESTNET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\local\boost_1_63_0;$(SolutionDir)..\..\..\include;$(SolutionDir)..\..\..\sources;$(SolutionDir)..\..\..\external;$(SolutionDir)..\..\..\external\cpp-ethereum;$(SolutionDir)..\..\..\external\cpp-ethereum\build_msvc_2015_win64\deps\src\secp256k1;$(SolutionDir)..\..\..\external\cpp-ethereum\build_msvc_2015_win64\deps\src\secp256k1\include;$(SolutionDir)..\..\..\external\secp256k1;$(SolutionDir)..\..\..\external\secp256k1\include;$(SolutionDir)..\..\..\external\curl\include;$(SolutionDir)..\..\..\external\cpp-nanomsg-ng\src\compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;4267;4018;4311</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../../../external/curl/build_msvc_2015_win64/lib/Debug/libcurl-d_imp.lib;$(SolutionDir)../../../external/cpp-ethereum/build_msvc_2015_win64/libdevcrypto/Debug/devcrypto.lib;$(SolutionDir)../../../external/cpp-ethereum/build_msvc_2015_win64/libdevcore/Debug/devcore.lib;$(SolutionDir)../../../external/cpp-ethereum/build_msvc_2015_win64/libethcore/Debug/ethcore.lib;$(SolutionDir)../../../external/cryptopp/build_msvc_2015_win64/lib/Debug/cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\local\boost_1_63_0\lib64-msvc14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;NATIVE_WINDOWS;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\local\boost_1_63_0;$(SolutionDir)..\..\..\include;$(SolutionDir)..\..\..\sources;$(SolutionDir)..\..\..\external;$(SolutionDir)..\..\..\external\cpp-ethereum;$(SolutionDir)..\..\..\external\cpp-ethereum\build_msvc_2015_win64\deps\src\secp256k1;$(SolutionDir)..\..\..\external\cpp-ethereum\build_msvc_2015_win64\deps\src\secp256k1\include;$(SolutionDir)..\..\..\external\secp256k1;$(SolutionDir)..\..\..\external\secp256k1\include;$(SolutionDir)..\..\..\external\curl\include;$(SolutionDir)..\..\..\external\cpp-nanomsg-ng\src\compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;4267;4018;4311</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../../../external/curl/build_msvc_2015_win64/lib/Release/libcurl_imp.lib;$(SolutionDir)../../../external/cpp-ethereum/build_msvc_2015_win64/libdevcrypto/Release\devcrypto.lib;$(SolutionDir)../../../external/cpp-ethereum/build_msvc_2015_win64/libdevcore/Release/devcore.lib;$(SolutionDir)../../../external/cpp-ethereum/build_msvc_2015_win64/libethcore/Release/ethcore.lib;$(SolutionDir)../../../external/cryptopp/build_msvc_2015_win64/lib/Release/cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\local\boost_1_63_0\lib64-msvc14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\compat\bitcoind_RPC.c" />
+    <ClCompile Include="..\..\..\sources\compat\inet.c" />
+    <ClCompile Include="..\..\..\sources\compat\OS.c" />
+    <ClCompile Include="..\..\..\sources\compat\OS_nonportable.c" />
+    <ClCompile Include="..\..\..\sources\compat\OS_portable.c" />
+    <ClCompile Include="..\..\..\sources\compat\OS_time.c" />
+    <ClCompile Include="..\..\..\sources\compat\usleep.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\cJSON.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\curve25519-donna.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\curve25519.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\hmac_sha512.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\ramcoder.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\SaM.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\scrypt.c" />
+    <ClCompile Include="..\..\..\sources\crypto777\tweetnacl.c" />
+    <ClCompile Include="..\..\..\sources\exchanges\etomicswap\etomiccurl.c" />
+    <ClCompile Include="..\..\..\sources\exchanges\etomicswap\etomiclib.cpp" />
+    <ClCompile Include="..\..\..\sources\exchanges\LP_etomic.c" />
+    <ClCompile Include="..\..\..\sources\exchanges\LP_secp.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\iguana\iguana_utils.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jaricom.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcapimin.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcapistd.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcarith.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jccoefct.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jccolor.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jchuff.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcinit.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcmainct.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcmarker.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcmaster.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcomapi.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcparam.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcprepct.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jcsample.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jctrans.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdapimin.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdapistd.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdarith.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdatadst.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdatasrc.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdcoefct.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdcolor.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jddctmgr.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdhuff.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdinput.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdmainct.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdmarker.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdmaster.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdmerge.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdpostct.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdsample.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jdtrans.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jerror.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jfdctflt.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jfdctfst.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jfdctint.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jidctflt.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jidctfst.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jidctint.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jmemmgr.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jquant1.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jquant2.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\jutils.c" />
+    <ClCompile Include="..\..\..\sources\jpeg\unix\jmemname.c" />
+    <ClCompile Include="..\..\..\sources\marketmaker\groestl.c" />
+    <ClCompile Include="..\..\..\sources\marketmaker\keccak.c" />
+    <ClCompile Include="..\..\..\sources\marketmaker\mini-gmp.c" />
+    <ClCompile Include="..\..\..\sources\marketmaker\mm.c" />
+    <ClCompile Include="..\..\..\sources\marketmaker\segwit_addr.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\compat\mman.h" />
+    <ClInclude Include="..\..\..\include\compat\OS_portable.h" />
+    <ClInclude Include="..\..\..\include\compat\pthread.h" />
+    <ClInclude Include="..\..\..\include\compat\sched.h" />
+    <ClInclude Include="..\..\..\include\compat\usleep.h" />
+    <ClInclude Include="..\..\..\include\crypto777\cJSON.h" />
+    <ClInclude Include="..\..\..\include\crypto777\curve25519.h" />
+    <ClInclude Include="..\..\..\include\crypto777\tweetnacl.h" />
+    <ClInclude Include="..\..\..\include\crypto777\uthash.h" />
+    <ClInclude Include="..\..\..\include\crypto777\utlist.h" />
+    <ClInclude Include="..\..\..\include\exchanges\exchanges777.h" />
+    <ClInclude Include="..\..\..\include\exchanges\LP_etomic.h" />
+    <ClInclude Include="..\..\..\include\exchanges\LP_include.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana777.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana_defines.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana_funcs.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana_globals.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana_structs.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana_types.h" />
+    <ClInclude Include="..\..\..\include\iguana\iguana_utils.h" />
+    <ClInclude Include="..\..\..\sources\exchanges\etomicswap\etomiccurl.h" />
+    <ClInclude Include="..\..\..\sources\exchanges\etomicswap\etomiclib.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\cderror.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\cdjpeg.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jconfig.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jdct.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jerror.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jinclude.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jmemsys.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jmorecfg.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jpegint.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jpeglib.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\jversion.h" />
+    <ClInclude Include="..\..\..\sources\jpeg\transupp.h" />
+    <ClInclude Include="..\..\..\sources\marketmaker\DEXstats.h" />
+    <ClInclude Include="..\..\..\sources\marketmaker\groestl.h" />
+    <ClInclude Include="..\..\..\sources\marketmaker\mini-gmp.h" />
+    <ClInclude Include="..\..\..\sources\marketmaker\segwit_addr.h" />
+    <ClInclude Include="..\..\..\sources\marketmaker\sph_keccak.h" />
+    <ClInclude Include="..\..\..\sources\marketmaker\sph_types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\external\cpp-ethereum\build_msvc_2015_win64\deps\src\secp256k1-build\secp256k1.vcxproj">
+      <Project>{a7578cf8-4702-37f3-b03a-401c87d0f7f6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\cpp-ethereum\build_msvc_2015_win64\libdevcore\devcore.vcxproj">
+      <Project>{32756084-2c97-364e-8fe5-4f4fef53cb97}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\cpp-ethereum\build_msvc_2015_win64\libdevcrypto\devcrypto.vcxproj">
+      <Project>{25856d58-9de7-3c00-9a23-3b19de571863}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\cpp-ethereum\build_msvc_2015_win64\libethcore\ethcore.vcxproj">
+      <Project>{03c9b453-57c6-3398-a559-d6357278c7df}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\cpp-ethereum\build_msvc_2015_win64\utils\libscrypt\scrypt.vcxproj">
+      <Project>{f217c8ea-1ef8-38c5-9dfd-d5a95a9dc649}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\cpp-nanomsg-ng\build_msvc_2015_win64\src\nng.vcxproj">
+      <Project>{e08c4586-c2c7-3e9c-9c93-609a64b5492c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\cryptopp\cryptlib.vcxproj">
+      <Project>{c39f4b46-6e89-4074-902e-ca57073044d2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\pthread-win32\pthread_lib.2015.vcxproj">
+      <Project>{a063dfad-6995-4e1a-afff-e43dc11e95b1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
